@@ -1,0 +1,13 @@
+try {
+    int choice = Integer.parseInt(scanner.nextLine());
+    switch (choice) {
+        case 1: registerUser(scanner); break;
+        case 2: loginUser(scanner); break;
+        case 3: logWorkout(scanner); break;
+        case 4: viewProgress(); break;
+        case 5: System.exit(0);
+        default: System.out.println("Invalid choice. Try again.");
+    }
+} catch (NumberFormatException e) {
+    System.out.println("Invalid input. Please enter a number.");
+}
